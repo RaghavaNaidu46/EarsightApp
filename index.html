@@ -54,15 +54,39 @@
 
 <h3>What it tells you</h3>
 <dl>
-  <dt>Steps down and kerbs</dt>
-  <dd>Highest priority. Announced as &ldquo;step down&rdquo; with the direction.</dd>
-  <dt>Obstacles</dt>
-  <dd>Anything solid in your path. Very close obstacles are announced as &ldquo;stop&rdquo;.</dd>
+  <dt>Steps down and steps up</dt>
+  <dd>Highest priority. Kerbs, platform edges and the foot of a staircase, announced
+      as &ldquo;step down&rdquo; or &ldquo;step up&rdquo; with the direction.</dd>
+  <dt>Obstacles, by name where possible</dt>
+  <dd>Earsight names what is in the way when it is confident &mdash; &ldquo;post, left&rdquo;,
+      &ldquo;car, two metres&rdquo;, &ldquo;bin, right&rdquo;. When it is not confident it
+      simply says &ldquo;obstacle&rdquo;. That is deliberate: a wrong name is worse than no
+      name, and the geometry has already confirmed something really is there.
+      Anything closer than about a step is announced as &ldquo;stop&rdquo;.</dd>
+  <dt>Doors and ways through</dt>
+  <dd>Doors, gates, stairs, lifts, escalators and ramps are announced as somewhere to go
+      rather than something to avoid. Earsight also spots door-width gaps in walls and
+      railings even when it cannot name them, and calls those a doorway.</dd>
+  <dt>Dead ends and turnings</dt>
+  <dd>If the way ahead is blocked across its full width, Earsight says &ldquo;dead end&rdquo;
+      with the distance. If it is blocked ahead but open to one side, it says
+      &ldquo;path opens left&rdquo; or &ldquo;path opens right&rdquo; and how far before you
+      need to turn.</dd>
   <dt>People and animals</dt>
   <dd>With direction, and distance when your phone can measure it.</dd>
   <dt>Signs and room numbers</dt>
   <dd>Short signage is read aloud. Long text such as posters and menus is ignored on purpose.</dd>
+  <dt>A covered camera</dt>
+  <dd>If a coat flap or bag strap blocks the lens, Earsight interrupts to tell you.
+      Everything else it could say would be unreliable while that is true.</dd>
 </dl>
+
+<h3>When you stop walking</h3>
+<p>
+  Earsight goes quiet when you stand still. It will still tell you about people, signs and
+  a covered camera, but it stops describing a space you are already standing in. Walking on
+  brings it back.
+</p>
 
 <h3>The proximity tone</h3>
 <p>
@@ -118,15 +142,27 @@
 <p>
   Continuous camera, detection and speech is demanding work. When the phone gets warm,
   Earsight slows down naming things but keeps hazard detection at full speed. On long
-  walks, a battery pack helps. The screen also dims itself after about fifteen seconds
-  of scanning to save power; touch it to bring it back.
+  walks, a battery pack helps. The screen stays on and at your normal brightness for the
+  whole walk &mdash; iOS cannot run the camera with the screen locked, so Earsight keeps
+  the display awake rather than risk scanning stopping mid-journey.
 </p>
 
 <h3>It keeps saying the same thing</h3>
 <p>
   Each kind of thing has a waiting period before it can be announced again &mdash;
-  longest for signs, shortest for steps down you are still approaching. If something
-  repeats a lot, you are probably still walking towards it.
+  longest for signs, shortest for steps down you are still approaching. The same
+  sentence is never repeated twice in quick succession, whatever produced it. Doors,
+  dead ends and turnings are announced only when the shape of the space actually
+  changes, not on a timer, so standing in one corridor will not make Earsight describe
+  it over and over. If something still repeats, you are probably walking towards it.
+</p>
+
+<h3>It named something wrongly</h3>
+<p>
+  Earsight only speaks a name when its confidence is high, and says &ldquo;obstacle&rdquo;
+  otherwise, but it can still be wrong. Treat names as a hint and the distance as the
+  reliable part &mdash; the distance comes from the depth sensor, not from guessing what
+  the object is. Please report bad names, especially ones that could mislead.
 </p>
 
 <h2 id="contact">Report a problem or ask a question</h2>
