@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Earsight Support</title>
+<meta name="description" content="Help and support for Earsight, an iPhone app that speaks what is ahead of you while you walk.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+
+<header>
+  <div class="mark">
+    <img src="logo.svg" alt="" width="44" height="44">
+    <h1>Earsight</h1>
+  </div>
+  <p class="tagline">Hear what&rsquo;s ahead of you.</p>
+  <nav class="sub" aria-label="Site sections">
+    <a href="#using">Using Earsight</a>
+    <a href="#settings">Settings</a>
+    <a href="#trouble">Troubleshooting</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<div class="note">
+  <strong>Earsight is an aid, not a replacement.</strong>
+  Keep using your cane or guide dog. Earsight cannot see everything &mdash; glass
+  doors, overhanging branches, fast-moving traffic and sudden drop-offs can all be
+  missed. Never rely on it alone to decide whether it is safe to step or cross.
+</div>
+
+<h2 id="using">Using Earsight</h2>
+<p>
+  Hang the phone on a lanyard or chest mount with the <strong>rear camera facing
+  the direction you walk</strong>. That leaves both hands free. Then tap anywhere
+  on the screen to start, and anywhere again to stop. You do not need to find a
+  button &mdash; the whole screen is the button, and a short vibration confirms
+  each change.
+</p>
+<p>
+  While scanning, Earsight speaks what it finds. It deliberately says very little.
+  Speech is slow, and a busy street produces far more than anyone could listen to,
+  so Earsight picks the single most important thing at a time and drops the rest.
+  Hazards interrupt whatever is being said; everything else waits its turn. The
+  result is quieter than you might expect, and that is on purpose &mdash; you still
+  need to hear the street itself.
+</p>
+
+<h3>What it tells you</h3>
+<dl>
+  <dt>Steps down and kerbs</dt>
+  <dd>Highest priority. Announced as &ldquo;step down&rdquo; with the direction.</dd>
+  <dt>Obstacles</dt>
+  <dd>Anything solid in your path. Very close obstacles are announced as &ldquo;stop&rdquo;.</dd>
+  <dt>People and animals</dt>
+  <dd>With direction, and distance when your phone can measure it.</dd>
+  <dt>Signs and room numbers</dt>
+  <dd>Short signage is read aloud. Long text such as posters and menus is ignored on purpose.</dd>
+</dl>
+
+<h3>The proximity tone</h3>
+<p>
+  Alongside speech you will hear a tick that gets faster and higher as you close in
+  on something, like a reversing sensor. It comes from the left or right to tell you
+  which side. This carries distance continuously, without spending words on numbers
+  that would be out of date by the time the sentence finished. You can turn it off
+  in Settings.
+</p>
+
+<h2 id="requirements">What you need</h2>
+<ul>
+  <li>An iPhone or iPad running <strong>iOS 18 or later</strong>.</li>
+  <li>For spoken distances, a device with a <strong>LiDAR sensor</strong> &mdash;
+      iPhone 12 Pro and later Pro models, or a recent iPad Pro. Without LiDAR,
+      Earsight still reads signs and spots people, but it will not guess distances
+      it cannot measure, and it says so when it starts.</li>
+  <li>Camera permission. Earsight asks once, on first use.</li>
+</ul>
+
+<h2 id="settings">Settings</h2>
+<dl>
+  <dt>How much to say</dt>
+  <dd><strong>Essential</strong> &mdash; hazards and people only, the quietest option.
+      <strong>Normal</strong> &mdash; adds signs. This is the default.
+      <strong>Detailed</strong> &mdash; everything, including more distant things.</dd>
+  <dt>Distances in</dt>
+  <dd>Metres or feet. Set from your region the first time, changeable any time.</dd>
+  <dt>Speaking speed</dt>
+  <dd>Most experienced screen reader users prefer this faster than the default.</dd>
+  <dt>Proximity tone</dt>
+  <dd>Turns the closing-distance tick on or off.</dd>
+</dl>
+
+<h2 id="trouble">Troubleshooting</h2>
+
+<h3>It is not saying anything</h3>
+<p>
+  Long silences are normal &mdash; Earsight stays quiet when there is nothing worth
+  saying. If it never speaks, check that scanning is actually on (tap the screen and
+  feel for the vibration), that your volume is up, and that the camera is not covered
+  by a coat or bag strap.
+</p>
+
+<h3>It says it cannot measure distance</h3>
+<p>
+  Your device has no LiDAR sensor. Signs and people still work. This is a hardware
+  limit and cannot be fixed in software &mdash; estimating distance without a sensor
+  would mean speaking numbers that might be wrong, which is worse than saying nothing.
+</p>
+
+<h3>It is warning me the phone is hot</h3>
+<p>
+  Continuous camera, detection and speech is demanding work. When the phone gets warm,
+  Earsight slows down naming things but keeps hazard detection at full speed. On long
+  walks, a battery pack helps. The screen also dims itself after about fifteen seconds
+  of scanning to save power; touch it to bring it back.
+</p>
+
+<h3>It keeps saying the same thing</h3>
+<p>
+  Each kind of thing has a waiting period before it can be announced again &mdash;
+  longest for signs, shortest for steps down you are still approaching. If something
+  repeats a lot, you are probably still walking towards it.
+</p>
+
+<h2 id="contact">Report a problem or ask a question</h2>
+<p>
+  Please open an issue on GitHub:
+  <a href="https://github.com/RaghavaNaidu46/EarsightApp/issues">github.com/RaghavaNaidu46/EarsightApp/issues</a>.
+  Describe what you were doing, what Earsight said or failed to say, and which iPhone
+  you were using. Safety-related reports are looked at first.
+</p>
+
+</main>
+
+<footer>
+  <p>Earsight &middot; <a href="privacy.html">Privacy Policy</a></p>
+  <p>Earsight is an assistive aid and is not a medical device, a mobility device, or a
+     substitute for orientation and mobility training.</p>
+</footer>
+
+</div>
+</body>
+</html>
